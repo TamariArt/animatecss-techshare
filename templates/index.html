@@ -14,5 +14,36 @@
         <button class="animate__animated animate__bounce button">Click Me!</button>
         <p class="animate__animated animate__fadeInUp">This text fades in from the bottom.</p>
     </div>
+
+    <!-- Custom Alert Box -->
+    <div class="alert-overlay" id="alertOverlay"></div>
+    <div class="animate__animated alert-box" id="customAlert">
+        <p>You've clicked the button!</p>
+        <button class="close-btn" onclick="closeAlert()">Close</button>
+    </div>
+
+    <script>
+        const button = document.querySelector('.button');
+        const alertBox = document.getElementById('customAlert');
+        const alertOverlay = document.getElementById('alertOverlay');
+
+        // Show alert with animation on button click
+        button.addEventListener('click', function () {
+            alertBox.style.display = 'block';
+            alertOverlay.style.display = 'block';
+            alertBox.classList.add('animate__tada');
+        });
+
+        function closeAlert() {
+            alertBox.classList.remove('animate__tada');
+            alertBox.classList.add('animate__bounceOutDown');
+            setTimeout(function () {
+                alertBox.style.display = 'none';
+                alertOverlay.style.display = 'none';
+                alertBox.classList.remove('animate__bounceOutDown');
+            }, 500);
+        }
+    </script>
+    
 </body>
 </html>
