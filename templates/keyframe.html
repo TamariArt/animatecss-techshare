@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate.css Advanced Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/keyframe.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Animate.css Advanced Features</h1>
+        
+         <!-- hi viewers!!! if you're reading this, follow my instagram @tamers.art :3-->
+
+        <section> <!--animation with delay -->
+            <!-- class="animate__animated animate__fadeIn animate__delay-2s" -->
+             <!-- class="fade-in-custom" --> 
+            <p  class="fade-in-custom animate__delay-2s">This text fades in with a delay.</p>
+        </section>
+
+        <section> <!-- infinite looping animation -->
+            <!-- hi me! cover 'animate__repeat-*'-->
+            <!-- class="animate__animated animate__pulse animate__infinite infinite-box" -->
+            <div >
+                This box has an infinite pulse animation.
+            </div>
+        </section>
+
+        <section> <!--animation speed control -->
+            <!-- class="animate__animated animate__bounce animate__fast speed-button" -->
+            <button>Fast Bounce</button>
+            <!-- class="animate__animated animate__bounce animate__slower speed-button" -->
+            <button>Slow Bounce</button>
+        </section>
+
+        <section><!-- combined animations -->
+
+                <!--  class="animate__animated animate__fadeIn animate__delay-1s" -->
+            <div>
+                <!--  class="animate__animated animate__rubberBand animate__delay-2s combined-text" -->
+                <p>
+                    This text fades in and then does a rubber band effect.
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
