@@ -31,9 +31,9 @@ h1 {
     background-color: #0056b3;
 }
 
-/* Style for the custom alert box */
+
 .alert-box {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -46,7 +46,7 @@ h1 {
     z-index: 1000;
 }
 .alert-overlay {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
